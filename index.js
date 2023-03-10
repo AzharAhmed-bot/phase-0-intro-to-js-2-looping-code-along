@@ -10,12 +10,15 @@ function writeCards(attendants,event){
 }
 console.log(writeCards(attendants))
 
-function countDown(){
-    let countup = 15;
-    while (countup > 0) {
-      console.log(countup--);
+
+function countDown(n){
+    let arr=[];
+    let i=10;
+    while (i >n) {
+        i--;
+     arr.unshift(i);
     }
 
-    return countDown;
+    return arr;
 }
-console.log(countDown());
+console.log(countDown(0));
