@@ -1,24 +1,15 @@
-const attendants= ['John','Marry','Ali','Peter'];
-const event='Birthday'
-function writeCards(attendants,event){
-    for(i=0;i<attendants.length;i++){
-        console.log(`Thank you,${attendants[i]}, for the wonderful ${event} gift`);
+
+function writeCards(name, reaction){
+    const newName = []
+    for(let i = 0 ; i < name.length; i++){
+    newName.push(`Thank you, ${name[i]}, for the wonderful ${reaction} gift!`);
     }
-
-    return(attendants);
-    
+    return newName;
 }
-console.log(writeCards(attendants))
 
-
-function countDown(n){
-    let arr=[];
-    let i=10;
-    while (i >n) {
-        i--;
-     arr.unshift(i);
+function countDown(number){
+    for(let i=number;i>=0;i--){
+        console.log(i)
     }
-
-    return arr;
-}
-console.log(countDown(0));
+    }
+countDown(11)
